@@ -40,6 +40,7 @@ public class SayHelloConsumerApplication {
     }
 
     public String hello(){
+        //System.out.println(123);
         return "hello";
     }
     public static void main(String[] args) {
