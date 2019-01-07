@@ -39,6 +39,9 @@ public class SayHelloConsumerApplication {
         return String.format("%s,%s!",greeting,name);
     }
 
+    public String hello(){
+        return "hello";
+    }
     public static void main(String[] args) {
         SpringApplication.run(SayHelloConsumerApplication.class, args);
     }
