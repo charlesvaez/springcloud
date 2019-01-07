@@ -40,6 +40,8 @@ public class SayHelloConsumerApplication {
     }
 
     public String hello(){
+        String result = "1"+"3";
+        System.out.println(result);
         return "hello";
     }
     public static void main(String[] args) {
