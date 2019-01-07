@@ -31,7 +31,7 @@ public class SayHelloConsumerApplication {
 //        String greeting = this.restTemplate.getForObject("http://localhost:5555/greeting",String.class);
 
         //负载均衡方式
-        //say-hello-provider对应到application.properties配置文件的say-hello-provider.ribbon.listOfServers配置
+        //say-hello-provider-eureka-client对应到application.properties配置文件的say-hello-provider-eureka-client.ribbon.listOfServers配置
         //增加@RibbonClient(name="say-hello-provider",configuration = SayHelloConfiguration.class)注解
         //增加SayHelloConfiguration类
         //在RestTemplate增加@LoadBalanced注解
