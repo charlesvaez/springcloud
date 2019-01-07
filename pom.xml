@@ -11,8 +11,11 @@
     <modules>
         <module>service-eureka</module>
         <module>service-eureka-client</module>
+        <module>say-hello-provider</module>
         <module>say-hello-provider-eureka-client</module>
+        <module>say-hello-consumer</module>
         <module>say-hello-consumer-eureka-client</module>
+        <module>say-hello-consumer-hystrix</module>
     </modules>
 
     <parent>
@@ -45,6 +48,11 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter</artifactId>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
             </dependency>
 
             <dependency>
