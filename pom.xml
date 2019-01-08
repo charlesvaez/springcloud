@@ -9,6 +9,9 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
+        <module>service-zuul</module>
+        <module>service-task</module>
+        <module>service-stream</module>
         <module>service-eureka</module>
         <module>service-eureka-client</module>
         <module>say-hello-provider</module>
