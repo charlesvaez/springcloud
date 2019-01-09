@@ -14,6 +14,8 @@
         <module>service-stream</module>
         <module>service-eureka</module>
         <module>service-eureka-client</module>
+        <module>service-config-server</module>
+        <module>service-config-client</module>
         <module>say-hello-provider</module>
         <module>say-hello-provider-eureka-client</module>
         <module>say-hello-consumer</module>
@@ -32,7 +34,8 @@
     <properties>
         <java.version>1.8</java.version>
         <spring-cloud.version>Greenwich.RC2</spring-cloud.version>
-
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
     <dependencyManagement>
