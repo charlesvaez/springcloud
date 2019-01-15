@@ -11,7 +11,8 @@
     <modules>
         <module>service-zuul</module>
         <module>service-task</module>
-        <module>service-stream</module>
+        <module>service-stream-server</module>
+        <module>service-stream-client</module>
         <module>service-eureka</module>
         <module>service-eureka-client</module>
         <module>service-config-server</module>
@@ -66,6 +67,14 @@
                 <artifactId>spring-boot-starter-test</artifactId>
                 <scope>test</scope>
             </dependency>
+
+            <!-- 热重新加载 - 在应用程序运行时更改代码后，在IntelliJ中按Ctrl + F9  -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-devtools</artifactId>
+                <optional>true</optional>
+            </dependency>
+
     </dependencies>
 
     <build>
