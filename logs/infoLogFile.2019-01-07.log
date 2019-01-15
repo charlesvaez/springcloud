@@ -1,0 +1,2 @@
+3082 [main] INFO  c.h.s.s.SayHelloConsumerHystrixApplication - No active profile set, falling back to default profiles: default
+10058 [main] INFO  c.h.s.s.SayHelloConsumerHystrixApplication - Started SayHelloConsumerHystrixApplication in 9.511 seconds (JVM running for 11.274)

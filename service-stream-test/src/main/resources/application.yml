@@ -1,0 +1,34 @@
+spring:
+  cloud:
+    stream:
+      binders:
+        kafka:
+          type: kafka
+          environment:
+            spring:
+              cloud:
+                stream:
+                  kafka:
+                    binder:
+                      brokers: localhost:9092
+                      zk-nodes: localhost:2181
+      #kafka:
+        #binder:
+          #brokers: localhost:9092
+      bindings:
+        greetings-in:
+          binder: kafka
+          destination: greetings
+          contentType: application/json
+          group: s3
+          consumer:
+            startOffset: latest
+            autoCommitOffset: false
+            concurrency: 1
+            partitioned: false
+        greetings-out:
+          binder: kafka
+          destination: greetings
+          contentType: application/json
+          producer:
+            partitionCount: 1
